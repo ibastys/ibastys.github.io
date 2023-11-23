@@ -1,0 +1,401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+     <meta name="viewport" content="device-width, initial-scale=1, shrink-to-fit=yes">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+     <title>Iulia Bastys</title>
+
+     <style type="text/css">
+        * { margin: 0; padding: 0; }
+        body { font: 16px Helvetica; line-height: 24px; }
+        .clear { clear: both; }
+        #page-wrap { width: 815px; margin: 40px auto 60px; }
+        #pic { float: right; margin: -10px 20px 0 0; }
+        img.rounded-corners {
+           border-radius: 12px;
+        }
+        #right { text-align: right; }
+        h1 { margin: 0 0 -18px 0; padding: 0 0 18px 0; 
+             font-family: Helvetica; 
+             text-transform: uppercase; 
+             font-size: 36px; font-weight: bold; 
+             border-bottom: 2px solid #999; }
+        h2 { font-size: 24px; position: relative; }
+        h2 span { position: absolute; bottom: 0; right: 0; 
+                  font-style: italic; font-family: Helvetica; 
+                  font-size: 24px; color: #999; font-weight: normal; }
+        p { margin: 0 0 16px 0; }
+        ul { margin: 0 0 32px 17px; }
+				ul li { margin: 10px 0px }
+        ol { margin: 0 0 32px 17px;  }
+				ol li { margin: 10px 0px }
+        a { color: #1565c0; text-decoration: none; }
+        #objective { width: 63%; float: left; }
+        #objective p { font-family: Helvetica }
+        th {font-weight: normal; text-align:left}
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+     </style>
+
+</head>
+
+<body>
+
+    <script>
+        const img1 = 'assets/img/moon-solid.png';
+        const img2 = 'assets/img/sun-solid.png';
+
+        let isDark = false
+        function switchMode() {
+            let element = document.body;
+            element.classList.toggle("dark");
+
+          isDark = !isDark
+
+          var imgElement = document.getElementById('change');
+          imgElement.src = (isDark ? img2 : img1);
+        }        
+    </script>
+
+
+    <div id="page-wrap">
+    
+        <img src="assets/img/ib2.jpg" alt="ib" id="pic" width="31%" class="wdn-strech rounded-corners"/>
+
+        <div id="contact-info" class="vcard">
+        
+            <!-- Microformats! -->
+        
+            <h1 class="fn">Iulia Bastys &nbsp;
+            <img src="assets/img/moon-solid.png" id="change" onclick ="switchMode();" height="22px"/></h1>
+            <br/>
+     
+				<table width="60%" align="center">
+    		  <tr>
+				<td width="60%" align="left">
+	  			<!-- <a href="#projects">Projects</a> &nbsp; &nbsp; &nbsp; -->
+	  			<a href="#publications">Publications</a> &nbsp; &nbsp; &nbsp;
+	  			<a href="#teaching">Teaching</a> &nbsp; &nbsp; &nbsp;
+					<a href="#service">Service</a> &nbsp; &nbsp; &nbsp;
+					<a href='#misc'>Misc</a> 
+				</td>
+      		</tr>
+    		</table>
+   		<hr style="width:63%"></br>
+ 
+        </div>
+                
+        <div id="objective">
+
+				<h2>About me</h2></br>
+<p>
+My research interests revolve around information security and privacy, with a focus on language-based security techniques (such as information flow control).
+My goal is to develop principled methods for system security.</br>
+
+During my PhD I have designed information flow control techniques for securing IoT and WebAssembly applications.
+Currently, I am interested in developing language-based defenses against microarchitectural attacks.</br>
+</p>
+
+<p>
+I completed my PhD in Computer Science at Chalmers University of Technology 
+under the supervision of 
+<a href="http://www.cse.chalmers.se/~andrei/">Andrei Sabelfeld</a>.
+</p>
+
+<p><font color=red>
+I am on the (academic) job market!
+</font>
+I am interested in a hybrid/remote or Gothenburg-based research-related position.
+</p>
+
+
+<b>Contact:</b> bastys [at] chalmers [dot] se	<p></p>
+
+        </div>
+        <div class="clear"></div>
+    		<hr style="width:100%">
+				<br>
+
+<!--
+        <h2><a name="news"></a> News&nbsp;
+        </h2>    <p>
+
+        <ul>
+          <li>2022/03/01-2023/08/01: Career break (12 months)
+        
+          <li>2022/09/05: Our paper 
+                          <a href="./assets/pdf/sas22.pdf">SecWasm: Information Flow Control for WebAssembly</a> 
+                          got accepted at SAS 2022!
+          </li>
+
+          <li> 2022/02/08: I defended my thesis 
+               <a href="./assets/pdf/phd-thesis.pdf">Principled Flow Tracking in IoT and Low-Level Applications</a> (Early defense).
+          </li>
+        </ul>
+        <div class="clear"></div>
+
+        <hr style="width:100%">
+				<br>
+-->
+
+
+    		<h2><a name="publications"></a> Publications&nbsp;    
+            <a href="https://orcid.org/0000-0002-3052-4185"><img src="assets/img/ORCIDiD_icon24x24.png" alt="orcid" id="orcid"></a>&nbsp;
+            <a href="https://dblp.dagstuhl.de/pid/195/5398.html"><img src="assets/img/dblp-logo.png" alt="dblp" id="dblp" width=24px heigth=24px></a>&nbsp;
+            <a href="https://scholar.google.com/citations?user=DCjWV2IAAAAJ"><img src="assets/img/google-scholar-logo.png" alt="gscholar" id="gscholar" width=24px heigth=24px></a>
+
+        </h2><br/>
+
+				[<a href="#papers">Papers</a>]
+				[<a href="#posters">Posters</a>]
+      	[<a href="#theses">Theses</a>]
+
+				<br><br>
+
+
+				<h3><a name="papers"></a>Papers</h3>
+				
+				<ol reversed>
+					<li>
+						<a href="./assets/pdf/sas22.pdf">SecWasm: Information Flow Control for WebAssembly</a><br/>
+						Iulia Bastys, Maximilian Algehed, Alexander Sj&#246;sten, Andrei Sabelfeld<br/>
+						In <i>The 29th Static Analysis Symposium (SAS)</i>, 2022<br/> 
+						[<a href="./assets/pdf/sas22.pdf">Paper</a>]
+						[<a href="./assets/pdf/sas22full.pdf">Full version</a> with proofs]
+						<!--[<a href="">Video</a>]-->
+            [<a href="./assets/pdf/sas22slides.pdf">Slides</a>]
+            <!-- [Video] -->
+					</li>
+
+					<li>
+						<a href="./assets/pdf/fps21.pdf">Automatic Annotation of Confidential Data in Java Code</a><br/>
+						Iulia Bastys, Pauline Bolignano, Franco Raimondi, Daniel Schoepe<br/>
+						In <i>The 14th International Symposium on Foundations & Practice of Security (FPS)</i>, 2021<br/> 
+						[<a href="./assets/pdf/fps21.pdf">Paper</a>]
+						[<a href="./assets/pdf/fps21slides.pdf">Slides</a>]
+						<!--[<a href="">Video</a>]-->
+            <!--[Slides]-->
+					</li>
+
+					<li>
+						<a href="./assets/pdf/csf20.pdf">Clockwork: Tracking Remote Timing Attacks</a><br/>
+						Iulia Bastys, Musard Balliu, Tamara Rezk, and Andrei Sabelfed<br/>
+						In <i>Proceedings of the IEEE Computer Security Foundations Symposium (CSF)</i>, 2020<br/> 
+						[<a href="./assets/pdf/csf20.pdf">Paper</a>]
+						[<a href="./assets/pdf/csf20full.pdf">Full version</a> with proofs]
+						[<a href="./assets/csf20extra.zip">Supplementary material</a>]
+						[<a href="./assets/pdf/csf20slides.pdf">Slides</a>]
+						[<a href="https://www.youtube.com/watch?v=FRxXjkCh5jM">Video</a>]
+					</li>
+
+
+					<li>
+						<a href="./assets/pdf/spmagazine19.pdf">Securing IoT Apps</a><br/>
+            Musard Balliu, Iulia Bastys, and Andrei Sabelfeld <br/>
+            In <i>IEEE Security and Privacy Magazine (Special Issue on Internet of Things)</i>, 2019 <br/>
+						[<a href="./assets/pdf/spmagazine19.pdf">Paper</a>]
+					</li>
+
+					<li>
+						<a href="./assets/pdf/nordsec18full.pdf">Tracking Information Flow via Delayed Output: Addressing Privacy in IoT and Emailing Apps</a><br/>
+						Iulia Bastys, Frank Piessens, and Andrei Sabelfed<br/>
+            In <i>Nordic Conference on Secure Systems (NordSec)</i>, 2018<br/>
+						[<a href="./assets/pdf/nordsec18full.pdf">Paper</a>] 
+            [<a href="./nordsec18slides.pdf">Slides</a>]
+					</li>
+        
+         	<li>
+						<a href="./assets/pdf/plas18.pdf">Prudent Design Principles for Information Flow Control</a><br/>
+						Iulia Bastys, Frank Piessens, and Andrei Sabelfeld<br/>
+						In <i>Proceedings of the Workshop on Programming Languages and Analysis for Security (PLAS)</i>, 2018 <br/>
+            [<a href="./assets/pdf/plas18.pdf">Paper</a>]
+            [<a href="./assets/pdf/plas18slides.pdf">Slides</a>]
+					</li>
+
+					<li>
+						<a href="./assets/pdf/ccs18full.pdf">If This Then What? Controlling Flows in IoT Apps</a><br/>
+						Iulia Bastys, Musard Balliu, and Andrei Sabelfeld <br/>
+						In <i>Proceedings of the ACM Conference on Computer and Communications Security (CCS)</i>, 2018 <br/>	
+						[<a href="./assets/pdf/ccs18full.pdf">Paper</a>] 
+						<!--[<a href="#">Supplementary material</a>] --> [Supplementary material]
+            [<a href="./assets/pdf/ccs18slides.pdf">Slides</a>] 
+            [<a href="https://www.youtube.com/watch?v=8CeKvV5_pVY">Video</a>]
+					</li>
+
+					<li>
+						<a href="./assets/pdf/sicherheit18.pdf">Towards an Architecture for Pseudonymous E-Commerce: Applying Privacy by Design to Online Shopping</a> <br/>
+						Sebastian Pape, Daniel Tasche, Iulia Bastys, Akos Grosz, J&ouml;rg L&auml;ssig, and Kai Rannenberg<br/>
+            In <i>SICHERHEIT</i>, 2018 </br>
+            [<a href="./assets/pdf/sicherheit18.pdf">Paper</a>]
+					</li>
+
+					<li>
+	          <a href="./assets/pdf/siglog2017.pdf">Type Systems for Information Flow Control: The Question of Granularity</a><br/>
+            Vineet Rajani, Iulia Bastys, Willard Rafnsson, and Deepak Garg <br/>
+						Invited article in <i>ACM SIGLOG News 4 (1), 6-21</i>, 2017 </br>		
+            [<a href="./assets/pdf/siglog2017.pdf">Paper</a>]
+            [Full version with proofs: <a href="./assets/pdf/siglog2017full.pdf">Technical Report MPI-SWS TR-2016-012</a>]
+					</li>
+
+					<li>
+       			<a href="./assets/pdf/post16.pdf">Asymmetric Secure Multi-Execution with Declassification</a> <br/>
+            Iulia Bolo&#351;teanu (Bastys) and Deepak Garg <br/>
+					  In <i>Proceedings of the International Conference on Principles of Security and Trust (POST)</i>, 2016</br>
+						[<a href="./assets/pdf/post16.pdf">Paper</a>]
+						[<a href="./assets/pdf/post16full.pdf">Full version</a> with proofs] 
+            [<a href="./assets/pdf/post16slides.pdf">Slides</a>]</p>					
+					</li>
+				</ol>
+     
+
+
+        <hr style="width:30%">
+				<br> 
+				<h3><a name="posters"></a>Posters</h3>
+
+				<ul>
+					<li>
+					Securing IoT Apps. 
+					Iulia Bastys, Musard Balliu, and Andrei Sabelfeld. 
+					Poster at the <i>4th IEEE European Symposium on Security and Privacy (Euro S&P)</i>, 2019.	
+					</li>
+
+					<li>
+					Security in Web-based Workflows. 
+					Thomas Bauereiss, Abhishek Bichhawat, Iulia Bolo&#351;teanu (Bastys), Peter Faymonville, Bernd Finkbeiner, Deepak Garg, Richard Gay, Sergey Grebenshchikov, Christian Hammer, Dieter Hutter, Ond&#345;ej Kun&#269;ar, Peter Lammich, Heiko Mantel, Christian M&uuml;ller, Andrei Popescu, Markus Rabe, Vineet Rajani, Helmut Seidl, Markus Tasch, and Leander Tentrup.
+					 Poster at the <i>36th Symposium on Security and Privacy (S&P)</i>, 2015.
+					</li>
+				</ul>
+
+
+
+        <hr style="width:30%">
+				<br> 
+				<h3><a name="theses"></a>Theses</h3>
+
+
+				<ul>
+					<li>
+      			<a href="./assets/pdf/phd-thesis.pdf">Principled Flow Tracking in IoT and Low-Level Applications</a>.
+            PhD Thesis,  <!-- </i>  | Supervisor: Andrei Sabelfeld <br />-->
+            Chalmers University of Technology, 2022.<br/>
+                        [<a href="./assets/pdf/sas22slides.pdf">Slides</a>]
+					</li>
+
+					<li>
+      			<a href="./assets/pdf/licentiate.pdf">A Principled Approach to Securing IoT Apps</a>.
+            Licentiate Thesis,  <!-- </i>  | Supervisor: Andrei Sabelfeld <br />-->
+            Chalmers University of Technology, 2018.
+					</li>
+
+					<li>
+						<a href="./assets/pdf/master.pdf">Asymmetric Secure Multi-Execution</a>.
+                Master Thesis, <!-- | Supervisor: Deepak Garg <br /> -->
+                Saarland University, 2016.	
+        	</li>
+				</ul>
+
+
+        <hr style="width:100%">
+				<br>
+
+    		<h2><a name="service"></a> Service</h2></br>
+
+
+        <h3> Program committee member</h3>
+
+        <a href="https://popl22.sigplan.org/home/prisc-2022">PriSC 2022</a>.
+
+        <br></br>
+
+
+        <h3>Reviewer</h3>
+
+        ACM Computing Survey 2021.
+
+        <br></br>
+
+
+        <h3>External reviewer</h3>
+
+        <a href="https://www.usenix.org/conference/usenixsecurity24">USENIX 2024</a>, 
+        <a href="https://www.ieee-security.org/TC/CSF2022/">CSF 2022</a>, 
+        <a href="https://www.ieee-security.org/TC/EuroSP2022/">Euro S&P 2022</a>, 
+        <a href="https://www.ieee-security.org/TC/CSF2021/">CSF 2021</a>, 
+        <a href="https://www.ieee-security.org/TC/EuroSP2021/">Euro S&P 2021</a>, 
+        <a href="https://www.ieee-security.org/TC/CSF2020/">CSF 2020</a>, 
+        <a href="https://www.sigsac.org/ccs/CCS2019/">CCS 2019</a>, 
+        <a href="https://www.ieee-security.org/TC/SP2018/">S&P 2018</a>, 
+        BIOSIG 2017,
+        <a href="https://www.ntnu.edu/esorics2017">ESORICS 2017</a>, 
+        SENSYBLE 2017, IFIP Sec 2017, TACAS 2015, CISIM 2012.
+
+        <br></br>
+
+        <div class="clear"></div>
+
+    		<hr style="width:100%">
+				<br>    
+
+    		<h2><a name="teaching"></a> Teaching </h2><br/>
+
+				<ul>
+          <li>Databases (TDA357) | 
+              [<a href="https://chalmers.instructure.com/courses/17327">LP3 2021</a>]
+
+          <li>Algorithms and Data Structures (TDA417) | 
+              [<a href="https://chalmers.instructure.com/courses/16181">LP2 2021</a>]
+              [<a href="https://chalmers.instructure.com/courses/10681">LP2 2020</a>]
+ 
+          <li>Introduction to Functional Programming (TDA555) | 
+              [<a href="https://chalmers.instructure.com/courses/10328">LP1 2021</a>]
+              [<a href="https://chalmers.instructure.com/courses/10328">LP1 2020</a>]
+
+					<li>Principles of Concurrent Programming (TDA384) | 
+              [<a href="http://www.cse.chalmers.se/edu/year/2018/course/TDA384_LP3/">LP3 2018</a>]
+              [<a href="http://www.cse.chalmers.se/edu/year/2018/course/TDA384_LP1/">LP1 2018</a>] 
+              [<a href"http://www.cse.chalmers.se/edu/year/2017/course/TDA384_LP3/">LP3 2017</a>]  
+          </li>
+
+					<li>Programming Languages Techniques (DAT151) | [<a href="http://www.cse.chalmers.se/edu/year/2018/course/DAT151/">LP2 2018</a>]</li>
+
+					<li>Mobile Business II (Lecture) | [<a href="https://www.m-chair.de/index.php?option=com_teaching&view=lecture&id=30">SS 2017</a>]</li>					
+
+					<li>Logics in Security (Advanced seminar) | [<a href="https://people.mpi-sws.org/~dg/teaching/lis2014/lis2014.html">WS 2014</a>]</li>
+					<li>Security (Core lecture) | [<a href="http://csl.cs.uni-saarland.de/teaching/security/2012-13/">WS 2012</a>]</li>
+					<li>Cryptography (Core lecture) | [<a href="https://www.infsec.cs.uni-saarland.de/teaching/12SS/Cryptography/">SS 2012</a>]</li>
+					<li>Procedural programming (Basic lecture) | [WS 2009]</li>
+				</ul>
+
+
+        <div class="clear"></div>
+
+    		<hr style="width:100%">
+				<br>    
+
+    		<h2><a name="misc"></a> Misc </h2><br/>
+
+				
+				<ul>
+          <!-- <li>Check out my popular science presentation explaining my PhD work on securing IoT apps to a general audience. 
+              Audio. 
+              Transcript.
+          </li>
+          -->
+					<li>Check out my popular science presentation explaining IFC in terms of a board game with zombies &#x1F9DF;.  It was part of an assignment on micro-teaching and the inspiration came from the original game, <a href="https://www.zombicide.com/en/">Zombicide</a>.<br><br>
+			
+        <video width="560" height="315" controls> 
+					<source src="video/ifc-zombies.mp4" type=video/mp4 frameborder="0" allowfullscreen></source>
+				</video>
+					</li>
+				</ul>
+
+</body>
+
+</html>
