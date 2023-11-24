@@ -1,0 +1,64 @@
+\documentclass[11pt]{article}
+
+\usepackage{graphicx}
+
+\usepackage{gnuplottex} 
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.8}
+
+\usepackage{epsfig}
+
+\title{Heatmap example with Gnuplot}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{figure}[h]
+\centering
+\footnotesize
+\caption{Heatmap of Privacy Violations}
+
+
+
+\begin{gnuplot}[terminal=epslatex,terminaloptions={font ",1"},scale=.75] 
+set lmargin 0
+#set tmargin 0
+set rmargin 0
+#set bmargin 10
+unset key
+set view map scale 1
+set style data lines
+set xtics border in scale 0,0 mirror norotate autojustify
+set xtics rotate by 52 offset 0,-5 right
+set xtics ()
+set ytics border in scale 0,0 mirror norotate autojustify
+set ytics norangelimit offset -5,0 #rotate by 60
+set ytics () 
+set ztics border in scale 0,0 nomirror norotate  autojustify
+# unset cbtics
+# unset colorbox
+set rtics axis in scale 0,0 nomirror norotate  autojustify
+#set title "Heat map" 
+set xrange [ -0.5 : 35.5 ] noreverse nowriteback
+set yrange [ -0.5 : 35.5 ] noreverse nowriteback
+# set cblabel "Number of Integrity Violations" 
+set cbrange [ 0.00000 : 100 ] noreverse nowriteback
+# set palette rgbformulae  -7, 2, -7
+#
+set palette model RGB
+set palette defined ( 0 "#ffeda0", 1 "#feb24c", 2 "#f03b20" )
+#
+#30,31,32
+#23,28,3
+#34,35,36
+#-7, 2, -7
+x = 0.0
+## Last datafile plotted: "$map3"
+plot 'heatmap-data-file.dat' matrix columnheaders rowheaders using 1:2:3 with image
+\end{gnuplot}
+\end{figure}
+
+
+\end{document}
